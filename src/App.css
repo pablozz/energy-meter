@@ -1,0 +1,47 @@
+.align-center {
+  text-align: center;
+}
+
+.parameter {
+  display: inline-block;
+  width: 80px;
+  margin: 10px 5px 10px 5px;
+}
+
+.time-text-container {
+  margin: auto;
+  font-size: 40px;
+}
+
+.stopwatch-button {
+  width: 125px;
+}
+
+.lap-table {
+  margin: auto;
+  width: 25%;
+  margin-top: 20px;
+}
+
+.btn-container {
+  width: 25%;
+  margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .lap-table {
+    width: 50%;
+  }
+  .btn-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .lap-table {
+    width: 90%;
+  }
+  .btn-container {
+    width: 90%;
+  }
+}
