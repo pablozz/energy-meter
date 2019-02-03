@@ -1,36 +1,25 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 
-import { Input, Label } from 'semantic-ui-react';
-import { changeParameter } from '../actions/change-parameter';
+import { Input, Label } from "semantic-ui-react";
+import { changeParameter } from "../actions/change-parameter";
 
 class Parameters extends Component {
   constructor(props) {
     super(props);
-    //this.state = { coeffVal: 1, impVal: 1, impKwhVal: 1000 };
 
     this.changeVal = this.changeVal.bind(this);
+    this.handleFocus = this.handleFocus.bind(this);
   }
 
   changeVal(e) {
-    /*switch (e.target.id) {
-      case "coeffInput":
-        this.setState({ coeffVal: e.target.value });
-        break;
-      case "impInput":
-        this.setState({ impVal: e.target.value });
-        break;
-      case "impKwhInput":
-        this.setState({ impKwhVal: e.target.value });
-        break;
-      default:
-        break;
-    }*/
     const type = e.target.id;
     const param = e.target.value;
     this.props.changeParameter(type, param);
   }
+
+  handleFocus = event => event.target.select();
 
   render() {
     return (
@@ -69,16 +58,20 @@ const Parameter = props => {
       <div>
         <Input
           fluid
+          onFocus={handleFocus}
           id={props.id}
           size="small"
           onChange={props.onChange}
           value={props.value}
-          placeholder={'Number'}
+          placeholder={"Number"}
         />
       </div>
     </div>
   );
 };
+
+const handleFocus = event => event.target.select();
+
 const mapStateToProps = state => {
   return {
     coeff: state.coeff,

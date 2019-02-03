@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { Button } from 'semantic-ui-react';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import { Button } from "semantic-ui-react";
 
-import { addResultRow } from '../actions/add-result-row';
+import { addResultRow } from "../actions/add-result-row";
 
 class Stopwatch extends Component {
   constructor(props) {
@@ -109,7 +109,7 @@ const TimeText = props => {
   return (
     <div className="time-text-container align-center">
       <p>
-        {mins} : {('0' + secs).slice(-2)} : {millis}
+        {mins} : {("0" + secs).slice(-2)} : {millis}
       </p>
     </div>
   );
@@ -119,9 +119,8 @@ const Buttons = props => {
   if (!props.startDisabled) {
     return (
       <div className="btn-container">
-        <Button.Group size={'big'} fluid>
+        <Button.Group size={"big"} fluid>
           <Button
-            focus={false}
             className="stopwatch-button"
             onClick={props.onReset}
             content="Reset"
@@ -137,7 +136,7 @@ const Buttons = props => {
   } else {
     return (
       <div className="btn-container">
-        <Button.Group size={'big'} fluid>
+        <Button.Group size={"big"} fluid>
           <Button
             className="stopwatch-button"
             onClick={props.onReset}
