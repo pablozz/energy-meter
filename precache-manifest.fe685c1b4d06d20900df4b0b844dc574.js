@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/energy-meter/static/media/icons.faff9214.woff"
   },
   {
-    "revision": "36e9985b1c8c3e4c611c",
-    "url": "/energy-meter/static/css/main.222e79fd.chunk.css"
+    "revision": "e9abd237ccba0b1fe8ed",
+    "url": "/energy-meter/static/css/main.0dfdc91b.chunk.css"
   },
   {
     "revision": "a1a749e89f578a49306ec2b055c073da",
     "url": "/energy-meter/static/media/brand-icons.a1a749e8.svg"
   },
   {
-    "revision": "190d8391b8d5dec9075d",
-    "url": "/energy-meter/static/js/1.190d8391.chunk.js"
+    "revision": "01c03877ac4e70370cda",
+    "url": "/energy-meter/static/js/1.01c03877.chunk.js"
   },
   {
     "revision": "68f1374951fab850ff13",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/energy-meter/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "36e9985b1c8c3e4c611c",
-    "url": "/energy-meter/static/js/main.36e9985b.chunk.js"
+    "revision": "e9abd237ccba0b1fe8ed",
+    "url": "/energy-meter/static/js/main.e9abd237.chunk.js"
   },
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
@@ -56,16 +56,12 @@ self.__precacheManifest = [
     "url": "/energy-meter/static/media/brand-icons.a046592b.woff"
   },
   {
-    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
-    "url": "/energy-meter/static/media/icons.b87b9ba5.ttf"
-  },
-  {
     "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
     "url": "/energy-meter/static/media/icons.8e3c7f55.eot"
   },
   {
-    "revision": "13db00b7a34fee4d819ab7f9838cc428",
-    "url": "/energy-meter/static/media/brand-icons.13db00b7.eot"
+    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
+    "url": "/energy-meter/static/media/icons.b87b9ba5.ttf"
   },
   {
     "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
@@ -76,15 +72,19 @@ self.__precacheManifest = [
     "url": "/energy-meter/static/media/outline-icons.82f60bd0.svg"
   },
   {
+    "revision": "13db00b7a34fee4d819ab7f9838cc428",
+    "url": "/energy-meter/static/media/brand-icons.13db00b7.eot"
+  },
+  {
     "revision": "962a1bf31c081691065fe333d9fa8105",
     "url": "/energy-meter/static/media/icons.962a1bf3.svg"
   },
   {
-    "revision": "190d8391b8d5dec9075d",
-    "url": "/energy-meter/static/css/1.68e4c6be.chunk.css"
+    "revision": "01c03877ac4e70370cda",
+    "url": "/energy-meter/static/css/1.f60dd432.chunk.css"
   },
   {
-    "revision": "8773b929132e2ad46409437238b38e4d",
+    "revision": "07f3e85fff6efbdc78c3c547c66c6550",
     "url": "/energy-meter/index.html"
   }
 ];
