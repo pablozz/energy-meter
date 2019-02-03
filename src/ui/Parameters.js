@@ -10,7 +10,6 @@ class Parameters extends Component {
     super(props);
 
     this.changeVal = this.changeVal.bind(this);
-    this.handleFocus = this.handleFocus.bind(this);
   }
 
   changeVal(e) {
@@ -18,8 +17,6 @@ class Parameters extends Component {
     const param = e.target.value;
     this.props.changeParameter(type, param);
   }
-
-  handleFocus = event => event.target.select();
 
   render() {
     return (
@@ -57,10 +54,12 @@ const Parameter = props => {
       </div>
       <div>
         <Input
+          id={props.id}
+          type="number"
           fluid
           onFocus={handleFocus}
-          id={props.id}
           size="small"
+          onKeyPress={checkIfNumbers}
           onChange={props.onChange}
           value={props.value}
           placeholder={"Number"}
@@ -71,6 +70,22 @@ const Parameter = props => {
 };
 
 const handleFocus = event => event.target.select();
+
+const checkIfNumbers = e => {
+  let key;
+  if (e.type === "paste") {
+    key = e.clipboardData.getData("text/plain");
+  } else {
+    key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+  }
+
+  var regex = /[0-9]|\./;
+  if (!regex.test(key)) {
+    e.returnValue = false;
+    if (e.preventDefault) e.preventDefault();
+  }
+};
 
 const mapStateToProps = state => {
   return {
