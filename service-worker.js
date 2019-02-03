@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/energy-meter/precache-manifest.fe685c1b4d06d20900df4b0b844dc574.js"
+  "/energy-meter/precache-manifest.b1a89407132fd14871dddcad43969c22.js"
 );
 
 workbox.clientsClaim();
