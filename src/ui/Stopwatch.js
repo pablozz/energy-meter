@@ -61,12 +61,18 @@ class Stopwatch extends Component {
       : (prevTime = this.state.startTime);
 
     const period = newTime - prevTime;
+    const kw = getKw(
+      this.props.coeff,
+      this.props.imp,
+      this.props.impKwh,
+      period
+    );
     const row = {
       nr: this.state.lapNum,
       period: period,
-      kw: getKw(this.props.coeff, this.props.imp, this.props.impKwh, period)
+      kw: kw,
+      amp: getAmp(kw, this.props.voltage, this.props.cosf).toFixed(1)
     };
-    //console.log(this.props.parameters.coeff);
     let rows = this.props.resultRows.slice();
     rows.unshift(row);
 
@@ -101,13 +107,18 @@ const getKw = (coeff, imp, impKwh, period) => {
   return ((coeff * imp * 3600) / ((impKwh * period) / 1000)).toFixed(3);
 };
 
+const getAmp = (kw, u, cosf) => {
+  //I = P / U / cos(f) * 1000 (A)
+  return (kw / u / cosf) * 1000;
+};
+
 const TimeText = props => {
   const millis = parseInt((props.time % 1000) / 100);
   const secs = parseInt(props.time / 1000) % 60;
   const mins = parseInt(props.time / 60000);
 
   return (
-    <div className="time-text-container align-center">
+    <div className="time-text-container">
       <p>
         {mins} : {("0" + secs).slice(-2)} : {millis}
       </p>
@@ -119,7 +130,7 @@ const Buttons = props => {
   if (!props.startDisabled) {
     return (
       <div className="btn-container">
-        <Button.Group size={"big"} fluid>
+        <Button.Group size={"massive"} fluid>
           <Button
             className="stopwatch-button"
             onClick={props.onReset}
@@ -136,7 +147,7 @@ const Buttons = props => {
   } else {
     return (
       <div className="btn-container">
-        <Button.Group size={"big"} fluid>
+        <Button.Group className="btn-group" size={"massive"} fluid>
           <Button
             className="stopwatch-button"
             onClick={props.onReset}
@@ -158,7 +169,9 @@ const mapStateToProps = state => {
     resultRows: state.resultRows,
     coeff: state.coeff,
     imp: state.imp,
-    impKwh: state.impKwh
+    impKwh: state.impKwh,
+    voltage: state.voltage,
+    cosf: state.cosf
   };
 };
 

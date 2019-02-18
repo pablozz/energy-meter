@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 
-import { Input, Label } from "semantic-ui-react";
+import { Input, Label, Grid } from "semantic-ui-react";
 import { changeParameter } from "../actions/change-parameter";
 
 class Parameters extends Component {
@@ -20,27 +20,33 @@ class Parameters extends Component {
 
   render() {
     return (
-      <div className="align-center">
-        <div className="parameters">
-          <Parameter
-            id="coeffInput"
-            onChange={this.changeVal}
-            value={this.props.coeff}
-            text="Coefficient"
-          />
-          <Parameter
-            id="impInput"
-            onChange={this.changeVal}
-            value={this.props.imp}
-            text="Impulse"
-          />
-          <Parameter
-            id="impKwhInput"
-            onChange={this.changeVal}
-            value={this.props.impKwh}
-            text="Imp/kWh"
-          />
-        </div>
+      <div className="parameters">
+        <Grid className="align-center" columns="equal">
+          <Grid.Column>
+            <Parameter
+              id="coeffInput"
+              onChange={this.changeVal}
+              value={this.props.coeff}
+              text="Coefficient"
+            />
+          </Grid.Column>
+          <Grid.Column>
+            <Parameter
+              id="impInput"
+              onChange={this.changeVal}
+              value={this.props.imp}
+              text="Impulse"
+            />
+          </Grid.Column>
+          <Grid.Column>
+            <Parameter
+              id="impKwhInput"
+              onChange={this.changeVal}
+              value={this.props.impKwh}
+              text="Imp/kWh"
+            />
+          </Grid.Column>
+        </Grid>
       </div>
     );
   }

@@ -2,10 +2,10 @@
   text-align: center;
 }
 
-.parameter {
-  display: inline-block;
-  width: 80px;
-  margin: 10px 5px 10px 5px;
+.parameters {
+  width: 50%;
+  margin: auto;
+  padding: 15px;
 }
 
 .time-text-container {
@@ -13,19 +13,32 @@
   font-size: 40px;
 }
 
-.stopwatch-button {
-  width: 125px;
-}
-
 .lap-table {
   margin: auto;
-  width: 25%;
-  margin-top: 20px;
+  margin-top: 10px;
+  width: 50%;
+  margin-bottom: 80px;
+  padding: 15px;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+.table-button {
+  font-weight: bold !important;
+  font-size: 18px !important;
 }
 
 .btn-container {
-  width: 25%;
+  width: 50%;
   margin: auto;
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+}
+
+.stopwatch-button {
+  width: 125px;
 }
 
 input[type="number"] {
@@ -38,15 +51,21 @@ input::-webkit-inner-spin-button {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .parameters {
+    width: 70%;
+  }
   .lap-table {
-    width: 50%;
+    width: 70%;
   }
   .btn-container {
-    width: 50%;
+    width: 70%;
   }
 }
 
 @media (max-width: 767px) {
+  .parameters {
+    width: 90%;
+  }
   .lap-table {
     width: 90%;
   }
