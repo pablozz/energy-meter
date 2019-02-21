@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/energy-meter/static/media/icons.faff9214.woff"
   },
   {
-    "revision": "62a8c45cfd3997c48e3a",
+    "revision": "e62e6401b07e07be0942",
     "url": "/energy-meter/static/css/main.033f898b.chunk.css"
   },
   {
@@ -28,24 +28,24 @@ self.__precacheManifest = [
     "url": "/energy-meter/static/media/outline-icons.ef60a4f6.woff"
   },
   {
-    "revision": "701ae6abd4719e9c2ada3535a497b341",
-    "url": "/energy-meter/static/media/outline-icons.701ae6ab.eot"
+    "revision": "9c74e172f87984c48ddf5c8108cabe67",
+    "url": "/energy-meter/static/media/flags.9c74e172.png"
   },
   {
     "revision": "ad97afd3337e8cda302d10ff5a4026b8",
     "url": "/energy-meter/static/media/outline-icons.ad97afd3.ttf"
   },
   {
+    "revision": "701ae6abd4719e9c2ada3535a497b341",
+    "url": "/energy-meter/static/media/outline-icons.701ae6ab.eot"
+  },
+  {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
     "url": "/energy-meter/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "9c74e172f87984c48ddf5c8108cabe67",
-    "url": "/energy-meter/static/media/flags.9c74e172.png"
-  },
-  {
-    "revision": "62a8c45cfd3997c48e3a",
-    "url": "/energy-meter/static/js/main.62a8c45c.chunk.js"
+    "revision": "e62e6401b07e07be0942",
+    "url": "/energy-meter/static/js/main.e62e6401.chunk.js"
   },
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
@@ -64,12 +64,12 @@ self.__precacheManifest = [
     "url": "/energy-meter/static/media/icons.8e3c7f55.eot"
   },
   {
-    "revision": "13db00b7a34fee4d819ab7f9838cc428",
-    "url": "/energy-meter/static/media/brand-icons.13db00b7.eot"
-  },
-  {
     "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
     "url": "/energy-meter/static/media/brand-icons.c5ebe0b3.ttf"
+  },
+  {
+    "revision": "13db00b7a34fee4d819ab7f9838cc428",
+    "url": "/energy-meter/static/media/brand-icons.13db00b7.eot"
   },
   {
     "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/energy-meter/static/css/1.14d2ae7a.chunk.css"
   },
   {
-    "revision": "5180789a0678b8769777c2060858600a",
+    "revision": "eabdc0bd0e343a6c21e646bf241fbaf0",
     "url": "/energy-meter/index.html"
   }
 ];
