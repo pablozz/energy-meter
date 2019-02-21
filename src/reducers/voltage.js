@@ -1,4 +1,4 @@
-export default function(state = 235, action) {
+export default function(state = 230, action) {
   switch (action.type) {
     case "CHANGE_VOLTAGE":
       return action.payload;

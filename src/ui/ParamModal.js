@@ -52,8 +52,8 @@ class ParamModal extends Component {
         <Modal.Content>
           <Parameter
             id="voltageInput"
-            label="Voltage (U)"
-            placeholder="0"
+            label="Voltage (V)"
+            placeholder="Number"
             value={this.props.voltage}
             onChange={this.changeVal}
           />
@@ -62,7 +62,7 @@ class ParamModal extends Component {
           <Parameter
             id="cosfInput"
             label="Power factor (cos(f))"
-            placeholder="0"
+            placeholder="Number"
             value={this.props.cosf}
             onChange={this.changeVal}
           />
