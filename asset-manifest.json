@@ -1,16 +1,16 @@
 {
   "main.css": "/energy-meter/static/css/main.033f898b.chunk.css",
-  "main.js": "/energy-meter/static/js/main.e62e6401.chunk.js",
-  "main.js.map": "/energy-meter/static/js/main.e62e6401.chunk.js.map",
+  "main.js": "/energy-meter/static/js/main.007d3305.chunk.js",
+  "main.js.map": "/energy-meter/static/js/main.007d3305.chunk.js.map",
   "static/css/1.14d2ae7a.chunk.css": "/energy-meter/static/css/1.14d2ae7a.chunk.css",
   "static/js/1.f120c27e.chunk.js": "/energy-meter/static/js/1.f120c27e.chunk.js",
   "static/js/1.f120c27e.chunk.js.map": "/energy-meter/static/js/1.f120c27e.chunk.js.map",
   "runtime~main.js": "/energy-meter/static/js/runtime~main.68f13749.js",
   "runtime~main.js.map": "/energy-meter/static/js/runtime~main.68f13749.js.map",
   "static/media/semantic.min.css": "/energy-meter/static/media/brand-icons.a1a749e8.svg",
-  "static/css/main.033f898b.chunk.css.map": "/energy-meter/static/css/main.033f898b.chunk.css.map",
   "static/css/1.14d2ae7a.chunk.css.map": "/energy-meter/static/css/1.14d2ae7a.chunk.css.map",
+  "static/css/main.033f898b.chunk.css.map": "/energy-meter/static/css/main.033f898b.chunk.css.map",
   "index.html": "/energy-meter/index.html",
-  "precache-manifest.8b61fdcba73d77e4a4c75a7975bca075.js": "/energy-meter/precache-manifest.8b61fdcba73d77e4a4c75a7975bca075.js",
+  "precache-manifest.e273f041ee287ffccc22bf11aed606e4.js": "/energy-meter/precache-manifest.e273f041ee287ffccc22bf11aed606e4.js",
   "service-worker.js": "/energy-meter/service-worker.js"
 }
