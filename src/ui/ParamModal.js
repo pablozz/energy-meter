@@ -21,6 +21,14 @@ class ParamModal extends Component {
     this.onDone = this.onDone.bind(this);
   }
 
+  componentDidMount() {
+    const lVoltage = localStorage.getItem("voltageInput", this.props.voltage);
+    const lCosf = localStorage.getItem("cosfInput", this.props.cosf);
+
+    if (lVoltage) this.props.changeParameter("voltageInput", lVoltage);
+    if (lCosf) this.props.changeParameter("cosfInput", lCosf);
+  }
+
   changeVal(e) {
     const type = e.target.id;
     const param = e.target.value;
@@ -35,6 +43,8 @@ class ParamModal extends Component {
   }
 
   onDone() {
+    localStorage.setItem("voltageInput", this.props.voltage);
+    localStorage.setItem("cosfInput", this.props.cosf);
     this.props.switchIsParamModal(false);
   }
 

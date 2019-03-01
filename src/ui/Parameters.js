@@ -12,10 +12,21 @@ class Parameters extends Component {
     this.changeVal = this.changeVal.bind(this);
   }
 
+  componentDidMount() {
+    const lCoeff = localStorage.getItem("coeffInput", this.props.voltage);
+    const lImp = localStorage.getItem("impInput", this.props.imp);
+    const lImpKwh = localStorage.getItem("impKwhInput", this.props.impKwh);
+
+    if (lCoeff) this.props.changeParameter("coeffInput", lCoeff);
+    if (lImp) this.props.changeParameter("impInput", lImp);
+    if (lImpKwh) this.props.changeParameter("impKwhInput", lImpKwh);
+  }
+
   changeVal(e) {
     const type = e.target.id;
     const param = e.target.value;
     this.props.changeParameter(type, param);
+    localStorage.setItem(type, param);
   }
 
   render() {
