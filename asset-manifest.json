@@ -8,9 +8,9 @@
   "runtime~main.js": "/energy-meter/static/js/runtime~main.68f13749.js",
   "runtime~main.js.map": "/energy-meter/static/js/runtime~main.68f13749.js.map",
   "static/media/semantic.min.css": "/energy-meter/static/media/brand-icons.a1a749e8.svg",
-  "static/css/1.14d2ae7a.chunk.css.map": "/energy-meter/static/css/1.14d2ae7a.chunk.css.map",
   "static/css/main.033f898b.chunk.css.map": "/energy-meter/static/css/main.033f898b.chunk.css.map",
+  "static/css/1.14d2ae7a.chunk.css.map": "/energy-meter/static/css/1.14d2ae7a.chunk.css.map",
   "index.html": "/energy-meter/index.html",
-  "precache-manifest.e273f041ee287ffccc22bf11aed606e4.js": "/energy-meter/precache-manifest.e273f041ee287ffccc22bf11aed606e4.js",
+  "precache-manifest.988bf653f5fcadf67353ff5ef7dcc500.js": "/energy-meter/precache-manifest.988bf653f5fcadf67353ff5ef7dcc500.js",
   "service-worker.js": "/energy-meter/service-worker.js"
 }
